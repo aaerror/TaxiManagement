@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+	<display-name>TaxiManagement</display-name>
+
+	<!-- SERVLET DE INICIO -->
+	<servlet>
+		<servlet-name>ServletInicio</servlet-name>
+		<servlet-class>controller.ServletInicio</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletInicio</servlet-name>
+		<url-pattern>/Inicio</url-pattern>
+	</servlet-mapping>
+
+	<!-- SERVLET DE USUARIO.DO -->
+	<servlet>
+		<servlet-name>ServletActionUsuario</servlet-name>
+		<servlet-class>controller.ServletActionUsuario</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletActionUsuario</servlet-name>
+		<url-pattern>/Usuario.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- SERVLET DE CUENTA.DO -->
+	<servlet>
+		<servlet-name>ServletActionCuenta</servlet-name>
+		<servlet-class>controller.ServletActionCuenta</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletActionCuenta</servlet-name>
+		<url-pattern>/Cuenta.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- SERVLET DE HOME -->
+	<servlet>
+		<servlet-name>ServletHome</servlet-name>
+		<servlet-class>controller.ServletHome</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletHome</servlet-name>
+		<url-pattern>/Home</url-pattern>
+	</servlet-mapping>
+
+	<!-- SERVLET DE CHOFER -->
+	<servlet>
+		<servlet-name>ServletChofer</servlet-name>
+		<servlet-class>controller.ServletChofer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletChofer</servlet-name>
+		<url-pattern>/Chofer</url-pattern>
+	</servlet-mapping>
+
+	<!-- SERVLET DE TAXI -->
+	<servlet>
+		<servlet-name>ServletCoche</servlet-name>
+		<servlet-class>controller.ServletCoche</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletCoche</servlet-name>
+		<url-pattern>/Coche</url-pattern>
+	</servlet-mapping>
+
+	<!-- SERVLET DE TAXI.DO -->
+	<servlet>
+		<servlet-name>ServletActionCoche</servlet-name>
+		<servlet-class>controller.ServletActionCoche</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletActionCoche</servlet-name>
+		<url-pattern>/Coche.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- SERVLET DE REPORTES -->
+	<servlet>
+		<servlet-name>ServletReportes</servlet-name>
+		<servlet-class>controller.ServletReportes</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletReportes</servlet-name>
+		<url-pattern>/Reportes</url-pattern>
+	</servlet-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>Inicio</welcome-file>
+	</welcome-file-list>
+</web-app>
